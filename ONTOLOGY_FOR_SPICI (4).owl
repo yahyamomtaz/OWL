@@ -1,0 +1,1496 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_MANAGER -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_MANAGER">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_SITE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_SITE">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION_OF"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:label>HAS SITE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTICIPANT_1"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTICIPANT_2"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION_OF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION_OF">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SITE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTICIPANT_1"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTICIPANT_2"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENT -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENT">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENTED_BY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENTED_BY -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENTED_BY">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ADRESS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ADRESS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BRANDS_REPRESENTED -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BRANDS_REPRESENTED">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CATEGORY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CATEGORY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONNECTIONS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONNECTIONS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COUNTRY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COUNTRY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DESCRIPTION -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DESCRIPTION">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_TYPE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_TYPE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FACEBOOK -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FACEBOOK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FOUNDER -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FOUNDER">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IMAGE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IMAGE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#INSTAGRAM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#INSTAGRAM">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JOB_TITLE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JOB_TITLE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LAUNCH_DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LAUNCH_DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LINKEDIN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LINKEDIN">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MAIL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MAIL">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NAME -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NAME">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NAME_OF_COMPANY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NAME_OF_COMPANY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NUM_EMPLOYEES -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NUM_EMPLOYEES">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_AREA_OF_ACTIVITY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_AREA_OF_ACTIVITY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_INFO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_INFO">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#P.IVA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#P.IVA">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#POSTO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#POSTO">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RAG.SOCIALE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RAG.SOCIALE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ROLE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ROLE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SALES_TURNOVER -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SALES_TURNOVER">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SHORT_DESCRIPTION -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SHORT_DESCRIPTION">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#STATUS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#STATUS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SURNAME -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SURNAME">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TAGS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TAGS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TECHNOLOGICAL_STACK -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TECHNOLOGICAL_STACK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TEL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TEL">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TWITTER -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TWITTER">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TYPE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TYPE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YOUTUBE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YOUTUBE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AREA_OF_ACTIVITY_&amp;_MARKET -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AREA_OF_ACTIVITY_&amp;_MARKET">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#WEBSITE&amp;LINK -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#WEBSITE&amp;LINK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE">
+        <rdfs:comment>it represent the register of all the people having a role in the company</rdfs:comment>
+        <rdfs:label>AFFILIATED PEOPLE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_MANAGER"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_SITE"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SITE"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTICIPANT_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTICIPANT_2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENT"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COUNTRY -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COUNTRY">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SITE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTICIPANT_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTICIPANT_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTICIPANT_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTICIPANT_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REGION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REGION">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SITE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SITE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SITE">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION_OF"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AQRATESRLs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AQRATESRLs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AdvancedScientificSensorsAndSystemss.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AdvancedScientificSensorsAndSystemss.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AeSystem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AeSystem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AicareSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AicareSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AlaEuropes.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AlaEuropes.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AllerGenIOSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AllerGenIOSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ApptripperSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ApptripperSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ArtysSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ArtysSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BCKSolutionsSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BCKSolutionsSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BEOND -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BEOND">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BautifulSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BautifulSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Bevacqua_Antonio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Bevacqua_Antonio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTICIPANT_1"/>
+        <PARTECIPATE rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Bevacqua_Antonio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BorsaMerciInternazionale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BorsaMerciInternazionale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Breeze -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Breeze">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COLOUREE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COLOUREE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CatchPromotion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CatchPromotion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Chora-BeyondTea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Chora-BeyondTea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CircleGarage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CircleGarage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CondomaniSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CondomaniSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DIGITALGREENs.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DIGITALGREENs.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ELSECorp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ELSECorp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EmoticronSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EmoticronSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EnvironmentalDataMining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EnvironmentalDataMining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Epoch� -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Epoch�">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EverywareSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EverywareSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Experenti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Experenti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FlairBit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FlairBit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FlyTrendy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FlyTrendy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FoodMicroTeamSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FoodMicroTeamSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FutureEnvironmentalDesignSrls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FutureEnvironmentalDesignSrls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GEOLOGIS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GEOLOGIS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HIMARCSRL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HIMARCSRL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Hassisto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Hassisto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HealthiaSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HealthiaSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Horos.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Horos.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IDAConsulting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IDAConsulting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ImmerxiveS.r.l -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ImmerxiveS.r.l">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ImmunePharmaSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ImmunePharmaSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#InesseCorporationLtd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#InesseCorporationLtd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Italent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Italent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JuveniisSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JuveniisSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Knowhedge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Knowhedge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#KruellSRL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#KruellSRL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LUMIINDUSTRIESSRL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LUMIINDUSTRIESSRL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Lasc�Srl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Lasc�Srl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LogicaSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LogicaSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LucheS.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LucheS.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Marras -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Marras">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Matchoice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Matchoice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Medigard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Medigard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MindeskS.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MindeskS.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MobimeshSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MobimeshSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Mukako-Mamma2.0Srl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Mukako-Mamma2.0Srl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MyPartMeccanicaSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MyPartMeccanicaSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NCDesign -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NCDesign">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NanomaterSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NanomaterSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Naturins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Naturins">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NextingSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NextingSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ORIGAMISrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ORIGAMISrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OftenMedical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OftenMedical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OpenMind -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OpenMind">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Optosmarts.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Optosmarts.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OrwellSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OrwellSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PLUMESTARSSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PLUMESTARSSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PROMETESrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PROMETESrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PediusSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PediusSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PluribusOneS.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PluribusOneS.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RisLabSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RisLabSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SCENTS.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SCENTS.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SUN2CAR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SUN2CAR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SYENMAINT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SYENMAINT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SafetyEnvironmentalEngineeringSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SafetyEnvironmentalEngineeringSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SbSGroupSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SbSGroupSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Seelights.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Seelights.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SeniorSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SeniorSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SinAppSysS.r.L. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SinAppSysS.r.L.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SmartTrack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SmartTrack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SoftEdgeInteractive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SoftEdgeInteractive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SoftMining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SoftMining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SouthAgroSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SouthAgroSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SpacearthTechnologySrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SpacearthTechnologySrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SpongeS.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SpongeS.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#S�phiaHighTech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#S�phiaHighTech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TYCHE3S.R.L. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TYCHE3S.R.L.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TheBigWaves.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TheBigWaves.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TheThinkingClouds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TheThinkingClouds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TiberlabSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TiberlabSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TinkidooSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TinkidooSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Titanos.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Titanos.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TolemaicaSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TolemaicaSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#UBT-UmbriaBioengineeringTechnologiesSRL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#UBT-UmbriaBioengineeringTechnologiesSRL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#UrbyetOrbit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#UrbyetOrbit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VegaResearchLaboratories -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VegaResearchLaboratories">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VisionarSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VisionarSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YOCABESrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YOCABESrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#apptripperSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#apptripperSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#eLoopSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#eLoopSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#eProlnn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#eProlnn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#urbyetorbit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#urbyetorbit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#3DCEL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#3DCEL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#3draps.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#3draps.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#A+Energy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#A+Energy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#UCSECONOMIASOLIDALE-SOCIETA&apos;COOPERATIVA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#UCSECONOMIASOLIDALE-SOCIETA&apos;COOPERATIVA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:label>THINGS</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
